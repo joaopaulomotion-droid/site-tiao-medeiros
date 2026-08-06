@@ -1,50 +1,52 @@
-[
-  {
-    "id": "agro",
-    "icon": "agro",
-    "title": "Defesa do Agronegócio",
-    "summary": "Ao lado de quem produz, gera empregos e movimenta a economia paranaense.",
-    "photo": "",
-    "body": [
-      "Como presidente da Comissão de Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural da Câmara dos Deputados, Tião Medeiros atua diretamente na defesa do produtor rural paranaense — do pequeno agricultor familiar ao grande produtor.",
-      "Autor e relator de projetos que tratam de segurança jurídica fundiária, proteção contra perdas na lavoura e infraestrutura para o escoamento da produção, seu trabalho busca garantir que o agronegócio continue sendo motor de emprego e renda para o Paraná.",
-      "Foto e detalhes desta atuação a inserir."
-    ]
-  },
-  {
-    "id": "familia",
-    "icon": "familia",
-    "title": "Defesa da Família",
-    "summary": "Valorização da família, dos princípios e da proteção das crianças, para lares mais fortes.",
-    "photo": "",
-    "body": [
-      "Cristão, esposo e pai, Tião Medeiros defende a família como base da sociedade paranaense. No mandato, isso se traduz em apoio a políticas que fortalecem a estrutura familiar, protegem crianças e adolescentes e valorizam a educação com participação dos pais.",
-      "Sua atuação busca assegurar que decisões legislativas levem em conta o impacto sobre os lares brasileiros, sempre com respeito aos princípios que orientam sua trajetória pessoal e pública.",
-      "Foto e detalhes desta atuação a inserir."
-    ]
-  },
-  {
-    "id": "empreendedorismo",
-    "icon": "empreendedorismo",
-    "title": "Empreendedorismo e Estado Mais Eficiente",
-    "summary": "Livre iniciativa, menos burocracia e uma máquina pública que serve, não atrapalha.",
-    "photo": "",
-    "body": [
-      "Com passagem pela Casa Civil do Governo do Estado e pela gestão dos Portos do Paraná, Tião Medeiros conhece de perto os gargalos da máquina pública. Por isso defende a simplificação de processos, a redução da burocracia e mais liberdade para quem empreende.",
-      "O objetivo é um Estado que facilite a vida do cidadão e do empresário — mais ágil, mais transparente e mais eficiente no uso do dinheiro público.",
-      "Foto e detalhes desta atuação a inserir."
-    ]
-  },
-  {
-    "id": "seguranca",
-    "icon": "seguranca",
-    "title": "Segurança Pública",
-    "summary": "Combate ao crime organizado e fortalecimento de quem protege a população todos os dias.",
-    "photo": "",
-    "body": [
-      "Tião Medeiros defende o fortalecimento das forças de segurança e o combate firme ao crime organizado, com apoio a projetos que dão melhores condições de trabalho a quem protege a população paranaense todos os dias.",
-      "Sua atuação também prioriza o apoio a municípios do interior, muitas vezes carentes de estrutura policial, garantindo que a segurança pública chegue a todas as regiões do Paraná.",
-      "Foto e detalhes desta atuação a inserir."
-    ]
-  }
-]
+{
+  "pautas": [
+    {
+      "id": "agro",
+      "icon": "agro",
+      "title": "Defesa do Agronegócio",
+      "summary": "Ao lado de quem produz, gera empregos e movimenta a economia paranaense.",
+      "photo": "",
+      "body": [
+        "Como presidente da Comissão de Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural da Câmara dos Deputados, Tião Medeiros atua diretamente na defesa do produtor rural paranaense — do pequeno agricultor familiar ao grande produtor.",
+        "Autor e relator de projetos que tratam de segurança jurídica fundiária, proteção contra perdas na lavoura e infraestrutura para o escoamento da produção, seu trabalho busca garantir que o agronegócio continue sendo motor de emprego e renda para o Paraná.",
+        "Foto e detalhes desta atuação a inserir."
+      ]
+    },
+    {
+      "id": "familia",
+      "icon": "familia",
+      "title": "Defesa da Família",
+      "summary": "Valorização da família, dos princípios e da proteção das crianças, para lares mais fortes.",
+      "photo": "",
+      "body": [
+        "Cristão, esposo e pai, Tião Medeiros defende a família como base da sociedade paranaense. No mandato, isso se traduz em apoio a políticas que fortalecem a estrutura familiar, protegem crianças e adolescentes e valorizam a educação com participação dos pais.",
+        "Sua atuação busca assegurar que decisões legislativas levem em conta o impacto sobre os lares brasileiros, sempre com respeito aos princípios que orientam sua trajetória pessoal e pública.",
+        "Foto e detalhes desta atuação a inserir."
+      ]
+    },
+    {
+      "id": "empreendedorismo",
+      "icon": "empreendedorismo",
+      "title": "Empreendedorismo e Estado Mais Eficiente",
+      "summary": "Livre iniciativa, menos burocracia e uma máquina pública que serve, não atrapalha.",
+      "photo": "",
+      "body": [
+        "Com passagem pela Casa Civil do Governo do Estado e pela gestão dos Portos do Paraná, Tião Medeiros conhece de perto os gargalos da máquina pública. Por isso defende a simplificação de processos, a redução da burocracia e mais liberdade para quem empreende.",
+        "O objetivo é um Estado que facilite a vida do cidadão e do empresário — mais ágil, mais transparente e mais eficiente no uso do dinheiro público.",
+        "Foto e detalhes desta atuação a inserir."
+      ]
+    },
+    {
+      "id": "seguranca",
+      "icon": "seguranca",
+      "title": "Segurança Pública",
+      "summary": "Combate ao crime organizado e fortalecimento de quem protege a população todos os dias.",
+      "photo": "",
+      "body": [
+        "Tião Medeiros defende o fortalecimento das forças de segurança e o combate firme ao crime organizado, com apoio a projetos que dão melhores condições de trabalho a quem protege a população paranaense todos os dias.",
+        "Sua atuação também prioriza o apoio a municípios do interior, muitas vezes carentes de estrutura policial, garantindo que a segurança pública chegue a todas as regiões do Paraná.",
+        "Foto e detalhes desta atuação a inserir."
+      ]
+    }
+  ]
+}
