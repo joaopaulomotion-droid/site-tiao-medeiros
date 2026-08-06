@@ -603,6 +603,11 @@ body.edit-mode .pauta-modal-photo .slot-edit-btn{display:inline-flex;}
 </style>
 </head>
 <body>
+<script>
+if (location.hash && /confirmation_token|invite_token|recovery_token|email_change_token/.test(location.hash)) {
+  location.href = '/admin/' + location.hash;
+}
+</script>
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="siteNav">
