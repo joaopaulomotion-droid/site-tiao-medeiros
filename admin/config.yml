@@ -8,78 +8,9 @@ public_folder: "/img/uploads"
 locale: "pt"
 
 collections:
-  - name: "site"
-    label: "Site — Textos gerais"
-    files:
-      - name: "geral"
-        label: "Início, Sobre, Reconhecimento, Vídeo e Contato"
-        file: "_data/site.json"
-        fields:
-          - { label: "SEO — Título da página", name: "meta.title", widget: "string" }
-          - { label: "SEO — Descrição da página", name: "meta.description", widget: "text" }
-
-          - label: "Início (Hero)"
-            name: "hero"
-            widget: "object"
-            fields:
-              - { label: "Selo acima do título", name: "eyebrow", widget: "string" }
-              - { label: "Título principal (pode usar <em>destaque</em>)", name: "title_html", widget: "string" }
-              - { label: "Texto de apoio", name: "lead", widget: "text" }
-              - { label: "Botão principal — texto", name: "cta_primary_label", widget: "string" }
-              - { label: "Botão principal — link", name: "cta_primary_href", widget: "string" }
-              - { label: "Botão secundário — texto", name: "cta_secondary_label", widget: "string" }
-              - { label: "Botão secundário — link", name: "cta_secondary_href", widget: "string" }
-              - { label: "Texto pequeno de confiança", name: "trust_text", widget: "string" }
-              - { label: "Texto pequeno em negrito", name: "trust_strong", widget: "string" }
-              - { label: "Selo do Índice Legisla Brasil", name: "legisla_chip", widget: "string" }
-              - { label: "Foto principal", name: "photo", widget: "image", required: false }
-              - { label: "Selo — número (ex: +10 anos)", name: "photo_note_number", widget: "string" }
-              - { label: "Selo — texto", name: "photo_note_text", widget: "string" }
-
-          - label: "Sobre"
-            name: "about"
-            widget: "object"
-            fields:
-              - { label: "Selo acima do título", name: "eyebrow", widget: "string" }
-              - { label: "Título da seção", name: "title", widget: "string" }
-              - { label: "Foto", name: "photo", widget: "image", required: false }
-              - { label: "Legenda sobre a foto", name: "photo_tag", widget: "string" }
-              - { label: "Parágrafos", name: "paragraphs", widget: "list", field: { label: "Parágrafo", name: "paragraph", widget: "text" } }
-              - { label: "Selos/badges (ex: Advogado)", name: "badges", widget: "list", field: { label: "Selo", name: "badge", widget: "string" } }
-
-          - label: "Reconhecimento"
-            name: "reconhecimento"
-            widget: "object"
-            fields:
-              - { label: "Número na medalha", name: "medal_big", widget: "string" }
-              - { label: "Texto pequeno na medalha", name: "medal_small", widget: "string" }
-              - { label: "Título", name: "title", widget: "string" }
-              - { label: "Texto", name: "text", widget: "text" }
-
-          - label: "Vídeo institucional"
-            name: "video"
-            widget: "object"
-            fields:
-              - { label: "ID do vídeo no YouTube (ex: dQw4w9WgXcQ)", name: "youtube_id", widget: "string", required: false, hint: "Deixe em branco para mostrar o placeholder" }
-              - { label: "Texto do placeholder (quando não há vídeo)", name: "placeholder_text", widget: "string" }
-
-          - label: "Rodapé e contato"
-            name: "footer"
-            widget: "object"
-            fields:
-              - { label: "Texto sobre o mandato", name: "about_text", widget: "text" }
-              - { label: "Endereço do gabinete", name: "endereco", widget: "string" }
-              - { label: "Telefone", name: "telefone", widget: "string" }
-              - { label: "E-mail", name: "email", widget: "string" }
-              - { label: "Link Instagram", name: "instagram_url", widget: "string", required: false }
-              - { label: "Link Facebook", name: "facebook_url", widget: "string", required: false }
-              - { label: "Link YouTube", name: "youtube_url", widget: "string", required: false }
-              - { label: "Link WhatsApp", name: "whatsapp_url", widget: "string", required: false }
-              - { label: "Linha de copyright", name: "copyright", widget: "string" }
-              - { label: "Linha de cargo", name: "cargo_line", widget: "string" }
-
   - name: "pautas"
-    label: "Pautas e Valores"
+    label: "🟦 Pautas e Valores"
+    description: "Os 4 cards que aparecem na secao 'Pautas e Valores' do site, e o conteudo que abre ao clicar em cada um."
     files:
       - name: "lista"
         label: "As 4 pautas"
@@ -91,18 +22,19 @@ collections:
             minimize: false
             summary: "{{title}}"
             fields:
-              - { label: "Identificador (não alterar)", name: "id", widget: "string" }
-              - label: "Ícone"
+              - { label: "Identificador (nao alterar)", name: "id", widget: "string" }
+              - label: "Icone"
                 name: "icon"
                 widget: "select"
                 options: ["agro", "familia", "empreendedorismo", "seguranca"]
-              - { label: "Título do card", name: "title", widget: "string" }
+              - { label: "Titulo do card", name: "title", widget: "string" }
               - { label: "Resumo curto (aparece no card)", name: "summary", widget: "text" }
               - { label: "Foto (aparece ao clicar / abrir)", name: "photo", widget: "image", required: false }
-              - { label: "Texto completo (aparece ao abrir)", name: "body", widget: "list", field: { label: "Parágrafo", name: "paragraph", widget: "text" } }
+              - { label: "Texto completo (aparece ao abrir)", name: "body", widget: "list", field: { label: "Paragrafo", name: "paragraph", widget: "text" } }
 
   - name: "timeline"
-    label: "Trajetória (linha do tempo)"
+    label: "🟦 Trajetoria"
+    description: "Os 9 momentos que aparecem na linha do tempo horizontal do site."
     files:
       - name: "lista"
         label: "Os 9 momentos"
@@ -112,14 +44,15 @@ collections:
             name: "timeline"
             widget: "list"
             minimize: false
-            summary: "{{title}}"
+            summary: "{{num}} - {{title}}"
             fields:
-              - { label: "Número (01, 02, 03...)", name: "num", widget: "string" }
-              - { label: "Título do momento", name: "title", widget: "string" }
+              - { label: "Numero (01, 02, 03...)", name: "num", widget: "string" }
+              - { label: "Titulo do momento", name: "title", widget: "string" }
               - { label: "Foto deste momento", name: "photo", widget: "image", required: false }
 
   - name: "projetos"
-    label: "Projetos Legislativos"
+    label: "🟦 Projetos Legislativos"
+    description: "Os cards de projetos de lei que aparecem na secao 'Projetos legislativos'."
     files:
       - name: "lista"
         label: "Lista de projetos"
@@ -129,11 +62,102 @@ collections:
             name: "projetos"
             widget: "list"
             minimize: false
-            summary: "{{title}}"
+            summary: "{{tag}} - {{title}}"
             fields:
-              - { label: "Número do projeto (ex: PL 4497/24)", name: "tag", widget: "string" }
-              - { label: "Título do projeto", name: "title", widget: "string" }
-              - { label: "Descrição", name: "body", widget: "text" }
-              - { label: "Tião Medeiros foi o Relator?", name: "relator", widget: "boolean", default: false }
+              - { label: "Numero do projeto (ex: PL 4497/24)", name: "tag", widget: "string" }
+              - { label: "Titulo do projeto", name: "title", widget: "string" }
+              - { label: "Descricao", name: "body", widget: "text" }
+              - { label: "Tiao Medeiros foi o Relator?", name: "relator", widget: "boolean", default: false }
               - { label: "Link para saber mais", name: "link", widget: "string" }
               - { label: "Card largo (ocupa a linha toda)", name: "wide", widget: "boolean", default: false }
+
+  - name: "hero"
+    label: "⬜ Inicio - Topo do site"
+    description: "O primeiro bloco que a pessoa ve ao abrir o site: titulo, texto, botoes e foto principal."
+    files:
+      - name: "conteudo"
+        label: "Topo do site (Inicio)"
+        file: "_data/hero.json"
+        fields:
+          - { label: "Selo acima do titulo", name: "eyebrow", widget: "string" }
+          - { label: "Titulo principal (pode usar <em>destaque</em> para grifar em amarelo)", name: "title_html", widget: "string" }
+          - { label: "Texto de apoio abaixo do titulo", name: "lead", widget: "text" }
+          - { label: "Botao principal - texto", name: "cta_primary_label", widget: "string" }
+          - { label: "Botao principal - link", name: "cta_primary_href", widget: "string" }
+          - { label: "Botao secundario - texto", name: "cta_secondary_label", widget: "string" }
+          - { label: "Botao secundario - link", name: "cta_secondary_href", widget: "string" }
+          - { label: "Texto pequeno de confianca", name: "trust_text", widget: "string" }
+          - { label: "Texto pequeno em negrito", name: "trust_strong", widget: "string" }
+          - { label: "Selo do Indice Legisla Brasil", name: "legisla_chip", widget: "string" }
+          - { label: "Foto principal", name: "photo", widget: "image", required: false }
+          - { label: "Selo - numero (ex: +10 anos)", name: "photo_note_number", widget: "string" }
+          - { label: "Selo - texto", name: "photo_note_text", widget: "string" }
+
+  - name: "about"
+    label: "⬜ Sobre - Quem e Tiao Medeiros"
+    description: "A secao 'Sobre', com a biografia e a foto ao lado."
+    files:
+      - name: "conteudo"
+        label: "Secao Sobre"
+        file: "_data/about.json"
+        fields:
+          - { label: "Selo acima do titulo", name: "eyebrow", widget: "string" }
+          - { label: "Titulo da secao", name: "title", widget: "string" }
+          - { label: "Foto", name: "photo", widget: "image", required: false }
+          - { label: "Legenda sobre a foto", name: "photo_tag", widget: "string" }
+          - { label: "Paragrafos do texto", name: "paragraphs", widget: "list", field: { label: "Paragrafo", name: "paragraph", widget: "text" } }
+          - { label: "Selos (ex: Advogado)", name: "badges", widget: "list", field: { label: "Selo", name: "badge", widget: "string" } }
+
+  - name: "reconhecimento"
+    label: "⬜ Reconhecimento"
+    description: "O bloco azul com a medalha do Indice Legisla Brasil."
+    files:
+      - name: "conteudo"
+        label: "Bloco de Reconhecimento"
+        file: "_data/reconhecimento.json"
+        fields:
+          - { label: "Numero na medalha", name: "medal_big", widget: "string" }
+          - { label: "Texto pequeno na medalha", name: "medal_small", widget: "string" }
+          - { label: "Titulo", name: "title", widget: "string" }
+          - { label: "Texto", name: "text", widget: "text" }
+
+  - name: "video"
+    label: "⬜ Video institucional"
+    description: "O video do YouTube que aparece perto do final do site."
+    files:
+      - name: "conteudo"
+        label: "Video"
+        file: "_data/video.json"
+        fields:
+          - { label: "ID do video no YouTube (a parte depois de watch?v=)", name: "youtube_id", widget: "string", required: false, hint: "Deixe em branco para mostrar o botao de play sem video ainda" }
+          - { label: "Texto mostrado quando nao ha video", name: "placeholder_text", widget: "string" }
+
+  - name: "footer"
+    label: "⬜ Rodape e Contato"
+    description: "As informacoes de contato e redes sociais no rodape do site."
+    files:
+      - name: "conteudo"
+        label: "Rodape"
+        file: "_data/footer.json"
+        fields:
+          - { label: "Texto sobre o mandato", name: "about_text", widget: "text" }
+          - { label: "Endereco do gabinete", name: "endereco", widget: "string" }
+          - { label: "Telefone", name: "telefone", widget: "string" }
+          - { label: "E-mail", name: "email", widget: "string" }
+          - { label: "Link Instagram", name: "instagram_url", widget: "string", required: false }
+          - { label: "Link Facebook", name: "facebook_url", widget: "string", required: false }
+          - { label: "Link YouTube", name: "youtube_url", widget: "string", required: false }
+          - { label: "Link WhatsApp", name: "whatsapp_url", widget: "string", required: false }
+          - { label: "Linha de copyright", name: "copyright", widget: "string" }
+          - { label: "Linha de cargo", name: "cargo_line", widget: "string" }
+
+  - name: "meta"
+    label: "⬜ SEO (Google)"
+    description: "Titulo e descricao usados pelo Google e ao compartilhar o link nas redes."
+    files:
+      - name: "conteudo"
+        label: "SEO"
+        file: "_data/meta.json"
+        fields:
+          - { label: "Titulo da pagina", name: "title", widget: "string" }
+          - { label: "Descricao da pagina", name: "description", widget: "text" }
