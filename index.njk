@@ -249,12 +249,17 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue-light);outline
 .hero-photo-frame{position:relative;}
 .hero-photo-card{
   position:relative;border-radius:28px;overflow:hidden;
-  aspect-ratio:4/5;
+  aspect-ratio:16/9;
   background:linear-gradient(145deg, var(--blue-light), var(--blue-mid) 60%, var(--blue-deep));
   display:flex;align-items:center;justify-content:center;
   border:6px solid rgba(255,255,255,.14);
   box-shadow:0 30px 60px rgba(6,16,42,.45);
 }
+.hero-photo-card iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.hero-photo-card .hero-video-placeholder{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--white);text-align:center;padding:0 20px;
+}
+.hero-photo-card .hero-video-placeholder span{font-family:var(--label);font-size:13px;letter-spacing:.05em;color:rgba(255,255,255,.65);}
 .hero-photo-card .ph-icon{width:34%;opacity:.5;}
 .img-slot{position:relative;}
 .img-slot .slot-content{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
@@ -686,10 +691,13 @@ if (location.hash && /confirmation_token|invite_token|recovery_token|email_chang
         <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2L12 16.4l-6.3 4.4L8 13.6 2 9.2h7.6L12 2z" fill="#0f2350"/></svg>
       </div>
       <div class="hero-photo-card">
-        {% if site.hero.photo %}
-        <img class="slot-img" src="{{ site.hero.photo }}" alt="Tião Medeiros" style="width:100%;height:100%;object-fit:cover;">
+        {% if site.video.youtube_id %}
+        <iframe src="https://www.youtube.com/embed/{{ site.video.youtube_id }}" title="Conheça Tião Medeiros" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         {% else %}
-        <div class="slot-content"><svg class="ph-icon" viewBox="0 0 24 24" fill="none"><path d="M12 12a5 5 0 100-10 5 5 0 000 10zM4 22c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+        <div class="hero-video-placeholder">
+          <div class="play-btn"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7-11-7z" fill="currentColor"/></svg></div>
+          <span>{{ site.video.placeholder_text }}</span>
+        </div>
         {% endif %}
       </div>
       <div class="hero-photo-note">
