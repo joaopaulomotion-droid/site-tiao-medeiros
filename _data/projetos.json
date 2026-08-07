@@ -1,42 +1,44 @@
-[
-  {
-    "tag": "PL 4497/24",
-    "title": "Registros de Imóveis Rurais em Faixa de Fronteira",
-    "body": "Propõe regras mais claras para o registro de imóveis rurais localizados em faixa de fronteira, dando segurança jurídica ao produtor.",
-    "relator": false,
-    "link": "#",
-    "wide": false
-  },
-  {
-    "tag": "PL 2252/23",
-    "title": "Material Didático",
-    "body": "Trata da qualidade e da destinação do material didático utilizado na educação básica.",
-    "relator": false,
-    "link": "#",
-    "wide": false
-  },
-  {
-    "tag": "PL 4307/25",
-    "title": "Isonomia nos Concursos Públicos",
-    "body": "Busca critérios mais isonômicos para concursos públicos, garantindo igualdade de condições aos candidatos.",
-    "relator": false,
-    "link": "#",
-    "wide": false
-  },
-  {
-    "tag": "PL 220/2025",
-    "title": "Reformas e Proteção ao Pequeno Produtor no Proagro",
-    "body": "Aprimora o Proagro para reforçar a proteção do pequeno produtor rural diante de perdas na lavoura.",
-    "relator": false,
-    "link": "#",
-    "wide": false
-  },
-  {
-    "tag": "PL 1940/24",
-    "title": "Ressarcimento a Produtores por Quedas de Energia",
-    "body": "Assegura o ressarcimento a produtores rurais que sofrem prejuízos por interrupções no fornecimento de energia.",
-    "relator": false,
-    "link": "#",
-    "wide": true
-  }
-]
+{
+  "projetos": [
+    {
+      "tag": "PL 4497/24",
+      "title": "Registros de Imóveis Rurais em Faixa de Fronteira",
+      "body": "Propõe regras mais claras para o registro de imóveis rurais localizados em faixa de fronteira, dando segurança jurídica ao produtor.",
+      "relator": false,
+      "link": "#",
+      "wide": false
+    },
+    {
+      "tag": "PL 2252/23",
+      "title": "Material Didático",
+      "body": "Trata da qualidade e da destinação do material didático utilizado na educação básica.",
+      "relator": false,
+      "link": "#",
+      "wide": false
+    },
+    {
+      "tag": "PL 4307/25",
+      "title": "Isonomia nos Concursos Públicos",
+      "body": "Busca critérios mais isonômicos para concursos públicos, garantindo igualdade de condições aos candidatos.",
+      "relator": false,
+      "link": "#",
+      "wide": false
+    },
+    {
+      "tag": "PL 220/2025",
+      "title": "Reformas e Proteção ao Pequeno Produtor no Proagro",
+      "body": "Aprimora o Proagro para reforçar a proteção do pequeno produtor rural diante de perdas na lavoura.",
+      "relator": false,
+      "link": "#",
+      "wide": false
+    },
+    {
+      "tag": "PL 1940/24",
+      "title": "Ressarcimento a Produtores por Quedas de Energia",
+      "body": "Assegura o ressarcimento a produtores rurais que sofrem prejuízos por interrupções no fornecimento de energia.",
+      "relator": false,
+      "link": "#",
+      "wide": true
+    }
+  ]
+}
