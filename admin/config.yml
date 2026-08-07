@@ -12,7 +12,7 @@ collections:
     label: "🟦 Pautas e Valores"
     description: "Os 4 cards que aparecem na secao 'Pautas e Valores' do site, e o conteudo que abre ao clicar em cada um."
     files:
-      - name: "lista"
+      - name: "pautas"
         label: "As 4 pautas"
         file: "_data/pautas.json"
         fields:
@@ -36,7 +36,7 @@ collections:
     label: "🟦 Trajetoria"
     description: "Os 9 momentos que aparecem na linha do tempo horizontal do site."
     files:
-      - name: "lista"
+      - name: "timeline"
         label: "Os 9 momentos"
         file: "_data/timeline.json"
         fields:
@@ -54,7 +54,7 @@ collections:
     label: "🟦 Projetos Legislativos"
     description: "Os cards de projetos de lei que aparecem na secao 'Projetos legislativos'."
     files:
-      - name: "lista"
+      - name: "projetos"
         label: "Lista de projetos"
         file: "_data/projetos.json"
         fields:
@@ -75,7 +75,7 @@ collections:
     label: "⬜ Inicio - Topo do site"
     description: "O primeiro bloco que a pessoa ve ao abrir o site: titulo, texto, botoes e foto principal."
     files:
-      - name: "conteudo"
+      - name: "hero"
         label: "Topo do site (Inicio)"
         file: "_data/hero.json"
         fields:
@@ -97,7 +97,7 @@ collections:
     label: "⬜ Sobre - Quem e Tiao Medeiros"
     description: "A secao 'Sobre', com a biografia e a foto ao lado."
     files:
-      - name: "conteudo"
+      - name: "about"
         label: "Secao Sobre"
         file: "_data/about.json"
         fields:
@@ -112,7 +112,7 @@ collections:
     label: "⬜ Reconhecimento"
     description: "O bloco azul com a medalha do Indice Legisla Brasil."
     files:
-      - name: "conteudo"
+      - name: "reconhecimento"
         label: "Bloco de Reconhecimento"
         file: "_data/reconhecimento.json"
         fields:
@@ -125,7 +125,7 @@ collections:
     label: "⬜ Video institucional"
     description: "O video do YouTube que aparece perto do final do site."
     files:
-      - name: "conteudo"
+      - name: "video"
         label: "Video"
         file: "_data/video.json"
         fields:
@@ -136,7 +136,7 @@ collections:
     label: "⬜ Rodape e Contato"
     description: "As informacoes de contato e redes sociais no rodape do site."
     files:
-      - name: "conteudo"
+      - name: "footer"
         label: "Rodape"
         file: "_data/footer.json"
         fields:
@@ -155,7 +155,7 @@ collections:
     label: "⬜ SEO (Google)"
     description: "Titulo e descricao usados pelo Google e ao compartilhar o link nas redes."
     files:
-      - name: "conteudo"
+      - name: "meta"
         label: "SEO"
         file: "_data/meta.json"
         fields:
