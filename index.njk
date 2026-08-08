@@ -234,7 +234,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue-light);outline
 .btn-ghost svg{transition:transform .3s var(--ease);}
 .btn-ghost:hover svg{transform:scale(1.15);}
 
-.hero-trust{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;}
+.hero-trust{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:36px;}
 .flag-pin{width:40px;height:40px;border-radius:50%;box-shadow:0 4px 10px rgba(0,0,0,.25);border:2px solid rgba(255,255,255,.5);overflow:hidden;flex:none;}
 .hero-trust-text{font-size:14px;color:rgba(255,255,255,.75);line-height:1.4;}
 .hero-trust-text strong{color:var(--white);display:block;font-size:15px;}
@@ -658,32 +658,6 @@ if (location.hash && /confirmation_token|invite_token|recovery_token|email_chang
       </div>
       <h1 class="reveal in reveal-d1">{{ site.hero.title_html | safe }}</h1>
       <p class="lead reveal in reveal-d2">{{ site.hero.lead }}</p>
-      <div class="hero-ctas reveal in reveal-d3">
-        <a href="{{ site.hero.cta_primary_href }}" class="btn btn-primary">{{ site.hero.cta_primary_label }}</a>
-        <a href="{{ site.hero.cta_secondary_href }}" class="btn btn-ghost">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7-11-7z" fill="currentColor"/></svg>
-          {{ site.hero.cta_secondary_label }}
-        </a>
-      </div>
-      <div class="hero-trust reveal in reveal-d4">
-        <div class="flag-pin" title="Brasil" aria-hidden="true">
-          <svg viewBox="0 0 100 100" width="40" height="40">
-            <rect width="100" height="100" fill="#2f9e44"/>
-            <polygon points="50,14 90,50 50,86 10,50" fill="#f9da49"/>
-            <circle cx="50" cy="50" r="18" fill="#274994"/>
-          </svg>
-        </div>
-        <div class="flag-pin" title="Paraná" aria-hidden="true">
-          <svg viewBox="0 0 100 100" width="40" height="40">
-            <rect width="100" height="100" fill="#2f9e44"/>
-            <path d="M0 20 L100 60 L100 78 L0 38 Z" fill="#ffffff"/>
-            <circle cx="50" cy="46" r="16" fill="#274994"/>
-          </svg>
-        </div>
-        <div class="hero-trust-text">{{ site.hero.trust_text }}<strong>{{ site.hero.trust_strong }}</strong></div>
-        <div class="trust-divider"></div>
-        <div class="legisla-chip"><span class="dot"></span> {{ site.hero.legisla_chip }}</div>
-      </div>
     </div>
     <div class="hero-photo-frame reveal in reveal-d2">
       <div class="hero-photo-accent" aria-hidden="true">
@@ -699,10 +673,25 @@ if (location.hash && /confirmation_token|invite_token|recovery_token|email_chang
         </div>
         {% endif %}
       </div>
-      <div class="hero-photo-note">
-        <strong>{{ site.hero.photo_note_number }}</strong>
-        {{ site.hero.photo_note_text }}
+    </div>
+    <div class="hero-trust reveal in reveal-d4">
+      <div class="flag-pin" title="Brasil" aria-hidden="true">
+        <svg viewBox="0 0 100 100" width="40" height="40">
+          <rect width="100" height="100" fill="#2f9e44"/>
+          <polygon points="50,14 90,50 50,86 10,50" fill="#f9da49"/>
+          <circle cx="50" cy="50" r="18" fill="#274994"/>
+        </svg>
       </div>
+      <div class="flag-pin" title="Paraná" aria-hidden="true">
+        <svg viewBox="0 0 100 100" width="40" height="40">
+          <rect width="100" height="100" fill="#2f9e44"/>
+          <path d="M0 20 L100 60 L100 78 L0 38 Z" fill="#ffffff"/>
+          <circle cx="50" cy="46" r="16" fill="#274994"/>
+        </svg>
+      </div>
+      <div class="hero-trust-text">{{ site.hero.trust_text }}<strong>{{ site.hero.trust_strong }}</strong></div>
+      <div class="trust-divider"></div>
+      <div class="legisla-chip"><span class="dot"></span> {{ site.hero.legisla_chip }}</div>
     </div>
   </div>
   <div class="scroll-cue" aria-hidden="true"><span>Role</span><div class="line"></div></div>
