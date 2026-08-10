@@ -104,7 +104,6 @@ collections:
           - { label: "Selo acima do titulo", name: "eyebrow", widget: "string" }
           - { label: "Titulo da secao", name: "title", widget: "string" }
           - { label: "Foto", name: "photo", widget: "image", required: false }
-          - { label: "Legenda sobre a foto", name: "photo_tag", widget: "string" }
           - { label: "Paragrafos do texto", name: "paragraphs", widget: "list", field: { label: "Paragrafo", name: "paragraph", widget: "text" } }
           - { label: "Selos (ex: Advogado)", name: "badges", widget: "list", field: { label: "Selo", name: "badge", widget: "string" } }
 
