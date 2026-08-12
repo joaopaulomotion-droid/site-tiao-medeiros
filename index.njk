@@ -584,6 +584,10 @@ body.edit-mode .pauta-modal-photo .slot-edit-btn{display:inline-flex;}
   box-shadow:0 30px 60px rgba(15,35,80,.2);
 }
 .video-shell iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.yt-facade{position:absolute;inset:0;cursor:pointer;background:#000;border:0;padding:0;width:100%;height:100%;display:block;}
+.yt-facade-thumb{width:100%;height:100%;object-fit:cover;display:block;}
+.yt-facade-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 34px rgba(0,0,0,.45);transition:transform .25s var(--ease);}
+.yt-facade:hover .yt-facade-play{transform:translate(-50%,-50%) scale(1.08);}
 .video-placeholder{
   position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
   color:var(--white);
@@ -667,7 +671,10 @@ if (location.hash && /confirmation_token|invite_token|recovery_token|email_chang
       </div>
       <div class="hero-photo-card">
         {% if site.video.youtube_id %}
-        <iframe src="https://www.youtube.com/embed/{{ site.video.youtube_id }}" title="Conheça Tião Medeiros" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        <button type="button" class="yt-facade" data-yt-id="{{ site.video.youtube_id }}" aria-label="Reproduzir vídeo: Conheça Tião Medeiros">
+          <img class="yt-facade-thumb" src="https://img.youtube.com/vi/{{ site.video.youtube_id }}/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/{{ site.video.youtube_id }}/hqdefault.jpg';" alt="Capa do vídeo: Conheça Tião Medeiros">
+          <span class="yt-facade-play"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7-11-7z" fill="#0f2350"/></svg></span>
+        </button>
         {% else %}
         <div class="hero-video-placeholder">
           <div class="play-btn"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7-11-7z" fill="currentColor"/></svg></div>
@@ -905,7 +912,10 @@ if (location.hash && /confirmation_token|invite_token|recovery_token|email_chang
     </div>
     <div class="video-shell reveal reveal-d1">
       {% if site.video.youtube_id %}
-      <iframe src="https://www.youtube.com/embed/{{ site.video.youtube_id }}" title="Conheça Tião Medeiros" allowfullscreen loading="lazy"></iframe>
+      <button type="button" class="yt-facade" data-yt-id="{{ site.video.youtube_id }}" aria-label="Reproduzir vídeo: Conheça Tião Medeiros">
+          <img class="yt-facade-thumb" src="https://img.youtube.com/vi/{{ site.video.youtube_id }}/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/{{ site.video.youtube_id }}/hqdefault.jpg';" alt="Capa do vídeo: Conheça Tião Medeiros">
+          <span class="yt-facade-play"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7-11-7z" fill="#0f2350"/></svg></span>
+        </button>
       {% else %}
       <div class="video-placeholder">
         <div class="play-btn"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7-11-7z" fill="currentColor"/></svg></div>
@@ -1037,6 +1047,21 @@ revealEls.forEach(el => io.observe(el));
     if (e.key === 'Escape' && overlay.classList.contains('open')) closePauta();
   });
 })();
+
+/* ============ CAPA DE VÍDEO (YOUTUBE FACADE) ============ */
+document.querySelectorAll('.yt-facade').forEach(el => {
+  function playVideo(){
+    const id = el.getAttribute('data-yt-id');
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+    iframe.title = el.getAttribute('aria-label') || 'Vídeo';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;';
+    el.replaceWith(iframe);
+  }
+  el.addEventListener('click', playVideo);
+});
 
 /* ============ MODAL TRAJETÓRIA ============ */
 (function(){
