@@ -573,7 +573,7 @@ body.edit-mode .pauta-modal-photo .slot-edit-btn{display:inline-flex;}
   position:relative;overflow:hidden;
 }
 .reco-bg-photo{
-  position:absolute;inset:0;background-size:cover;background-position:center;
+  position:absolute;inset:0;background-size:cover;
   opacity:.32;mix-blend-mode:overlay;z-index:0;
 }
 .reco::after{
@@ -924,7 +924,7 @@ if (location.hash && /confirmation_token|invite_token|recovery_token|email_chang
   <div class="wrap">
     <div class="reco reveal">
       {% if site.reconhecimento.photo %}
-      <div class="reco-bg-photo" style="background-image:url('{{ site.reconhecimento.photo }}')"></div>
+      <div class="reco-bg-photo" style="background-image:url('{{ site.reconhecimento.photo }}');background-position:center {{ site.reconhecimento.photo_position | default('center') }};"></div>
       {% endif %}
       <div class="reco-medal">
         <div class="reco-medal-inner"><span class="big">{{ site.reconhecimento.medal_big }}</span><span class="small">{{ site.reconhecimento.medal_small }}</span></div>
