@@ -121,6 +121,11 @@ collections:
           - { label: "Titulo", name: "title", widget: "string" }
           - { label: "Texto", name: "text", widget: "text" }
           - { label: "Foto de fundo (opcional)", name: "photo", widget: "image", required: false }
+          - label: "Enquadramento da foto (ajuste se o rosto for cortado)"
+            name: "photo_position"
+            widget: "select"
+            default: "center"
+            options: [{ label: "Mostrar topo da foto (rosto)", value: "top" }, { label: "Mostrar meio da foto", value: "center" }, { label: "Mostrar base da foto", value: "bottom" }]
           - { label: "Link da materia (opcional)", name: "link", widget: "string", required: false, hint: "Cole aqui o link de uma noticia ou materia sobre o Indice Legisla Brasil" }
 
   - name: "video"
