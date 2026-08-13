@@ -69,7 +69,7 @@ collections:
               - { label: "Titulo do projeto", name: "title", widget: "string" }
               - { label: "Descricao", name: "body", widget: "text" }
               - { label: "Tiao Medeiros foi o Relator?", name: "relator", widget: "boolean", default: false }
-              - { label: "Link para saber mais", name: "link", widget: "string" }
+              - { label: "Link da materia/pagina que explica o projeto", name: "link", widget: "string", hint: "Cole aqui o link de uma noticia, materia ou pagina que fala sobre este projeto" }
               - { label: "Card largo (ocupa a linha toda)", name: "wide", widget: "boolean", default: false }
 
   - name: "hero"
@@ -120,6 +120,8 @@ collections:
           - { label: "Texto pequeno na medalha", name: "medal_small", widget: "string" }
           - { label: "Titulo", name: "title", widget: "string" }
           - { label: "Texto", name: "text", widget: "text" }
+          - { label: "Foto de fundo (opcional)", name: "photo", widget: "image", required: false }
+          - { label: "Link da materia (opcional)", name: "link", widget: "string", required: false, hint: "Cole aqui o link de uma noticia ou materia sobre o Indice Legisla Brasil" }
 
   - name: "video"
     label: "⬜ Video institucional"
