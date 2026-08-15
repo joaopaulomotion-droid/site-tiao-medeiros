@@ -155,6 +155,11 @@ collections:
           - { label: "Link Facebook", name: "facebook_url", widget: "string", required: false }
           - { label: "Link YouTube", name: "youtube_url", widget: "string", required: false }
           - { label: "Link WhatsApp", name: "whatsapp_url", widget: "string", required: false }
+          - label: "Link do grupo do WhatsApp"
+            name: "whatsapp_group_url"
+            widget: "string"
+            required: false
+            hint: "Cole aqui o link de convite do grupo do WhatsApp. Vai ser usado no botao 'Entre no grupo do WhatsApp' do menu"
           - { label: "Linha de copyright", name: "copyright", widget: "string" }
           - { label: "Linha de cargo", name: "cargo_line", widget: "string" }
 
