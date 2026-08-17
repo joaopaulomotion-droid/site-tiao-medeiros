@@ -67,7 +67,12 @@ collections:
             fields:
               - { label: "Numero do projeto (ex: PL 4497/24)", name: "tag", widget: "string" }
               - { label: "Titulo do projeto", name: "title", widget: "string" }
-              - { label: "Descricao", name: "body", widget: "text" }
+              - { label: "Descricao (resumo curto que aparece no card)", name: "body", widget: "text" }
+              - label: "Texto completo (aparece ao clicar em Saiba mais)"
+                name: "texto_completo"
+                widget: "list"
+                field: { label: "Paragrafo", name: "paragraph", widget: "text" }
+                required: false
               - { label: "Tiao Medeiros foi o Relator?", name: "relator", widget: "boolean", default: false }
               - { label: "Link da materia/pagina que explica o projeto", name: "link", widget: "string", hint: "Cole aqui o link de uma noticia, materia ou pagina que fala sobre este projeto" }
               - { label: "Card largo (ocupa a linha toda)", name: "wide", widget: "boolean", default: false }
