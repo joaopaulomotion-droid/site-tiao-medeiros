@@ -535,6 +535,8 @@ body.edit-mode .pauta-modal-photo .slot-edit-btn{display:inline-flex;}
   transition:transform .3s var(--ease), box-shadow .3s var(--ease);
 }
 .projeto-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(15,35,80,.09);}
+.projeto-card{cursor:pointer;}
+.projeto-card:focus-visible{outline:3px solid var(--blue-light);outline-offset:3px;}
 .projeto-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;}
 .projeto-tag{
   font-family:var(--label);font-weight:700;font-size:14px;letter-spacing:.03em;
@@ -916,11 +918,37 @@ if (location.hash && /confirmation_token|invite_token|recovery_token|email_chang
     </div>
     <div class="projetos-grid">
       {% for proj in projetos.projetos %}
-      <div class="projeto-card{% if proj.wide %} projeto-card--wide{% endif %}" data-relator="{{ proj.relator }}">
+      <div class="projeto-card{% if proj.wide %} projeto-card--wide{% endif %}" data-relator="{{ proj.relator }}" data-proj-target="{{ proj.tag }}" role="button" tabindex="0">
         <div class="projeto-top"><span class="projeto-tag">{{ proj.tag }}</span><span class="autoria-seal">Autoria</span><span class="relator-seal">Relator</span></div>
         <h3>{{ proj.title }}</h3>
         <p>{{ proj.body }}</p>
-        <a href="{{ proj.link }}" class="projeto-link">Saber mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <span class="projeto-link">Saber mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- ============ MODAL PROJETOS ============ -->
+    <div class="pauta-modal-overlay" id="projModalOverlay" aria-hidden="true">
+      {% for proj in projetos.projetos %}
+      <div class="pauta-modal-panel" data-proj-panel="{{ proj.tag }}">
+        <button class="pauta-modal-close" type="button" data-proj-modal-close aria-label="Fechar">×</button>
+        <div class="pauta-modal-photo">
+          <div class="slot-content"><svg class="ph-icon" viewBox="0 0 24 24" fill="none"><path d="M9 12h6m-6 4h6M9 8h1m4 13H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+        <div class="pauta-modal-body">
+          <span class="eyebrow">{{ proj.tag }}{% if proj.relator %} — Relator{% else %} — Autoria{% endif %}</span>
+          <h3>{{ proj.title }}</h3>
+          {% if proj.texto_completo %}
+            {% for para in proj.texto_completo %}
+            <p>{{ para }}</p>
+            {% endfor %}
+          {% else %}
+            <p>{{ proj.body }}</p>
+          {% endif %}
+          {% if proj.link and proj.link != "#" %}
+          <a href="{{ proj.link }}" class="reco-btn" target="_blank" rel="noopener" style="margin-top:20px;">Ver matéria completa <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          {% endif %}
+        </div>
       </div>
       {% endfor %}
     </div>
@@ -1015,6 +1043,54 @@ const io = new IntersectionObserver((entries) => {
   });
 }, {threshold:0.15});
 revealEls.forEach(el => io.observe(el));
+
+/* ============ MODAL PROJETOS LEGISLATIVOS ============ */
+(function(){
+  const overlay = document.getElementById('projModalOverlay');
+  if (!overlay) return;
+  const panels = overlay.querySelectorAll('.pauta-modal-panel');
+  const cards = document.querySelectorAll('.projeto-card[data-proj-target]');
+  let lastFocused = null;
+
+  function openProj(key){
+    let found = false;
+    panels.forEach(p => {
+      const match = p.getAttribute('data-proj-panel') === key;
+      p.classList.toggle('active', match);
+      if (match) found = true;
+    });
+    if (!found) return;
+    lastFocused = document.activeElement;
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('pauta-modal-active');
+    const closeBtn = overlay.querySelector('.pauta-modal-panel.active .pauta-modal-close');
+    if (closeBtn) closeBtn.focus();
+  }
+  function closeProj(){
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('pauta-modal-active');
+    if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+  }
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      openProj(card.getAttribute('data-proj-target'));
+    });
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openProj(card.getAttribute('data-proj-target'));
+      }
+    });
+  });
+  overlay.querySelectorAll('[data-proj-modal-close]').forEach(btn => btn.addEventListener('click', closeProj));
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeProj(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) closeProj();
+  });
+})();
 
 /* ============ MODAL PAUTAS E VALORES ============ */
 (function(){
