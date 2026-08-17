@@ -148,9 +148,9 @@ collections:
         file: "_data/footer.json"
         fields:
           - { label: "Texto sobre o mandato", name: "about_text", widget: "text" }
-          - { label: "Endereco do gabinete", name: "endereco", widget: "string" }
-          - { label: "Telefone", name: "telefone", widget: "string" }
-          - { label: "E-mail", name: "email", widget: "string" }
+          - { label: "Endereco do gabinete", name: "endereco", widget: "string", required: false }
+          - { label: "Telefone", name: "telefone", widget: "string", required: false }
+          - { label: "E-mail", name: "email", widget: "string", required: false }
           - { label: "Link Instagram", name: "instagram_url", widget: "string", required: false }
           - { label: "Link Facebook", name: "facebook_url", widget: "string", required: false }
           - { label: "Link YouTube", name: "youtube_url", widget: "string", required: false }
