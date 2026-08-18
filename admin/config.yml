@@ -67,6 +67,7 @@ collections:
             fields:
               - { label: "Numero do projeto (ex: PL 4497/24)", name: "tag", widget: "string" }
               - { label: "Titulo do projeto", name: "title", widget: "string" }
+              - { label: "Foto do projeto (opcional, aparece ao clicar em Saiba mais)", name: "photo", widget: "image", required: false }
               - { label: "Descricao (resumo curto que aparece no card)", name: "body", widget: "text" }
               - label: "Texto completo (aparece ao clicar em Saiba mais)"
                 name: "texto_completo"
