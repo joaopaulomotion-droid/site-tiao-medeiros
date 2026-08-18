@@ -38,12 +38,10 @@
     },
     {
       "tag": "PL 220/2025",
-      "title": "Reformas e Proteção ao Pequeno Produtor no Proagro",
-      "body": "Aprimora o Proagro para reforçar a proteção do pequeno produtor rural diante de perdas na lavoura.",
+      "title": "Proteção ao pequeno produtor no Proagro",
+      "body": "Quem planta precisa de proteção para continuar produzindo: Proagro forte é segurança para o pequeno produtor.",
       "texto_completo": [
-        "O projeto aprimora as regras do Proagro (Programa de Garantia da Atividade Agropecuária), reforçando a proteção do pequeno produtor rural diante de perdas causadas por fatores climáticos e outras adversidades na lavoura.",
-        "A proposta busca tornar o acesso ao programa mais simples para quem produz em pequena escala, agilizando o ressarcimento e reduzindo a burocracia que hoje afasta muitos agricultores familiares desse tipo de proteção.",
-        "Fortalecer o Proagro significa dar mais segurança para quem depende diretamente da terra, especialmente em um cenário de eventos climáticos cada vez mais frequentes."
+        "O projeto aperfeiçoa as regras de acesso ao Proagro, buscando impedir que critérios alheios à finalidade do programa, como determinadas informações do Cadastro Ambiental Rural, sejam utilizados de maneira inadequada para restringir o acesso dos agricultores à proteção contra perdas. Como relator na Comissão de Agricultura, Tião Medeiros apresentou substitutivo para aprimorar a proposta, defendendo que o Proagro cumpra sua função de proteger o produtor diante dos riscos da atividade rural, especialmente em um cenário de maior frequência de eventos climáticos adversos."
       ],
       "relator": false,
       "link": "#",
@@ -52,17 +50,25 @@
     },
     {
       "tag": "PL 1940/24",
-      "title": "Ressarcimento a Produtores por Quedas de Energia",
-      "body": "Assegura o ressarcimento a produtores rurais que sofrem prejuízos por interrupções no fornecimento de energia.",
+      "title": "Ressarcimento por perdas causadas por quedas de energia",
+      "body": "Se a falta de energia causa o prejuízo, o produtor não pode ficar sozinho com a conta.",
       "texto_completo": [
-        "O projeto assegura o direito ao ressarcimento a produtores rurais que sofrem prejuízos causados por interrupções no fornecimento de energia elétrica, um problema recorrente em áreas rurais e que pode comprometer safras, criações e equipamentos.",
-        "Como relator da matéria, Tião Medeiros atuou para aperfeiçoar o texto, tornando mais claros os critérios de comprovação do prejuízo e os prazos para que as concessionárias de energia façam o devido ressarcimento ao produtor.",
-        "A proposta busca colocar o produtor rural em pé de igualdade com outros consumidores quando o assunto é falha na prestação de um serviço essencial."
+        "O projeto estabelece o direito de produtores rurais serem ressarcidos quando perderem produtos perecíveis em razão de interrupções no fornecimento de energia elétrica. A proposta exige a comprovação técnica do prejuízo e de sua relação com a falha no serviço, criando uma responsabilidade mais clara para as concessionárias diante de perdas que podem representar um grande impacto financeiro para o produtor. Como relator na Comissão de Agricultura, Tião Medeiros recomendou a aprovação da proposta."
       ],
       "relator": true,
       "link": "#",
-      "wide": true,
+      "wide": false,
       "photo": ""
+    },
+    {
+      "relator": false,
+      "wide": false,
+      "title": "Estabelece prazo para conclusão de inquérito  no STF",
+      "tag": "PL 2426/2023",
+      "body": "Definir prazo para a duração de inquérito no STF é questão de Justiça e defesa da democracia",
+      "texto_completo": [
+        "O Supremo Tribunal Federal é responsável por julgar processos que envolvem autoridades com foro privilegiado, como ministros de Estado, congressistas e membros do Poder Judiciário. O inquérito judicial é uma das formas de investigação utilizadas pelo STF para apurar eventuais ilícitos cometidos por essas autoridades. No entanto, muitos inquéritos judiciais no âmbito do STF se prolongam por anos, o que prejudica a efetividade da Justiça e gera incertezas jurídicas. A proposta prevê prazo máximo de 180 (cento e oitenta) dias para a conclusão dos inquéritos, prorrogável por igual período mediante justificativa fundamentada do relator. Com isso, busca-se garantir a celeridade processual e a efetividade da Justiça."
+      ]
     }
   ]
 }
