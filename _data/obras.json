@@ -1,0 +1,205 @@
+{
+  "headline": "Mais de uma década transformando o Noroeste do Paraná.",
+  "subhead": "Saúde, educação, infraestrutura, meio ambiente e moradia: um compilado das principais entregas e articulações do mandato.",
+  "stats": [
+    {
+      "num": "R$ 700 mi+",
+      "label": "Em investimentos articulados"
+    },
+    {
+      "num": "844",
+      "label": "Moradias entregues"
+    },
+    {
+      "num": "65,2 km",
+      "label": "De rodovia em duplicação (BR-376)"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "br376",
+      "tag": "Infraestrutura rodoviária",
+      "title": "BR-376: segurança e desenvolvimento para o Noroeste",
+      "resumo": "R$ 625 milhões em duplicações da BR-376, unindo Paranavaí a Nova Esperança e Nova Londrina.",
+      "photo": "",
+      "texto_completo": [
+        "Quem conhece a BR-376 sabe que essa nunca foi apenas uma discussão sobre asfalto. Sempre foi uma questão de segurança, de desenvolvimento e, principalmente, de preservação de vidas.",
+        "Ainda como deputado estadual, Tião Medeiros trabalhou para apoiar a duplicação do trecho entre Paranavaí e Nova Esperança: R$ 200 milhões em investimentos e 33 quilômetros de pista duplicada.",
+        "Como deputado federal, identificou que a continuidade da duplicação entre Paranavaí e Nova Londrina não estava prevista no novo pacote de concessões rodoviárias do Paraná — e articulou junto à Bancada Federal, à ANTT e ao Ministério dos Transportes para corrigir essa falha.",
+        "O resultado: 65,2 quilômetros de duplicação garantidos, com investimento estimado em R$ 425 milhões, incluindo novas rotatórias, retornos em nível, passarela para pedestres, nova ponte e faixas adicionais."
+      ],
+      "timeline": [],
+      "highlight": "R$ 625 milhões",
+      "highlight_label": "investidos nas duas etapas de duplicação"
+    },
+    {
+      "id": "aeroporto",
+      "tag": "Infraestrutura aeroportuária",
+      "title": "Aeroporto Edu Chaves: um novo tempo para Paranavaí",
+      "resumo": "R$ 30 milhões modernizaram o Aeroporto Regional Edu Chaves após anos de articulação junto à Infraero.",
+      "photo": "",
+      "texto_completo": [
+        "Nenhuma cidade cresce isolada. Para atrair investimentos, gerar empregos e criar oportunidades, é preciso ter infraestrutura e conexão com os grandes centros — por isso a modernização do Aeroporto Regional Edu Chaves se tornou uma das grandes pautas do mandato.",
+        "Foram anos de reuniões, apresentações de projetos e diálogo permanente com a Infraero e o Governo Federal, defendendo que investir no aeroporto era investir no desenvolvimento de toda a região.",
+        "Em 2026, a inauguração do novo terminal de passageiros marcou a concretização dessa luta: aproximadamente R$ 30 milhões em investimentos, incluindo balizamento noturno, nova sinalização de pista, farol de aeródromo, biruta iluminada, estação meteorológica e reforço das áreas de segurança."
+      ],
+      "timeline": [
+        {
+          "ano": "2015",
+          "texto": "Defesa do potencial do aeroporto e da necessidade de investimentos para acompanhar o crescimento da cidade."
+        },
+        {
+          "ano": "2019",
+          "texto": "Retorno dos voos regulares, comprovando a demanda e o potencial de Paranavaí na aviação regional."
+        },
+        {
+          "ano": "2021",
+          "texto": "Início de uma nova etapa: primeiros projetos de melhoria e intensificação das articulações federais."
+        },
+        {
+          "ano": "2022–2024",
+          "texto": "Anos de reuniões, projetos e diálogo permanente com a Infraero e o Governo Federal."
+        },
+        {
+          "ano": "2025",
+          "texto": "A Infraero confirma os investimentos para a modernização do aeroporto."
+        },
+        {
+          "ano": "2026",
+          "texto": "Inauguração do novo terminal de passageiros: um novo tempo para Paranavaí."
+        }
+      ],
+      "highlight": "R$ 30 milhões",
+      "highlight_label": "na modernização do terminal e da pista"
+    },
+    {
+      "id": "saude",
+      "tag": "Saúde",
+      "title": "Saúde: transformando sonhos em realidade",
+      "resumo": "Mais de R$ 65 milhões para a Santa Casa, o AME, a atenção básica e a UBS de Mandiocaba.",
+      "photo": "",
+      "texto_completo": [
+        "A conclusão da Unidade Morumbi da Santa Casa — uma obra que ficou mais de 20 anos parada — se tornou realidade graças a mais de R$ 50 milhões em investimentos.",
+        "Também houve participação nas articulações que viabilizaram o AME (Ambulatório Médico de Especialidades), ampliando o acesso a consultas, exames e atendimentos especializados.",
+        "Como deputado federal, foram garantidos mais de R$ 10 milhões para a Santa Casa de Paranavaí, além de R$ 1,5 milhão para ampliar atendimentos de média e alta complexidade, R$ 4 milhões para a atenção básica e recursos para a construção da UBS de Mandiocaba.",
+        "A luta segue por uma conquista histórica: a implantação do curso de Medicina em Paranavaí, fortalecendo a formação de profissionais e preparando a cidade para o futuro."
+      ],
+      "timeline": [],
+      "highlight": "R$ 65 milhões+",
+      "highlight_label": "investidos na rede de saúde de Paranavaí"
+    },
+    {
+      "id": "educacao",
+      "tag": "Educação",
+      "title": "Educação: investimento que transforma futuros",
+      "resumo": "R$ 9,5 milhões em reformas, tecnologia e o novo curso de Direito da Unespar.",
+      "photo": "",
+      "texto_completo": [
+        "Ao longo dos mandatos, foram garantidos investimentos que modernizaram escolas, fortaleceram o ensino e ampliaram oportunidades para os estudantes de Paranavaí.",
+        "Em 2024, após anos de articulação, o curso de Direito da Unespar se tornou realidade, atendendo uma demanda histórica e ampliando o acesso ao ensino superior público na cidade.",
+        "Também foi destinado R$ 1 milhão para um moderno laboratório de pesquisa e análises no IFPR, fortalecendo a formação de profissionais e a pesquisa aplicada na região.",
+        "O transporte escolar também foi fortalecido, com a destinação de ônibus para garantir mais segurança e permanência dos estudantes na escola."
+      ],
+      "timeline": [
+        {
+          "ano": "2019",
+          "texto": "Entrega dos kits Educatron para colégios estaduais, levando tecnologia e inovação ao aprendizado."
+        },
+        {
+          "ano": "2020",
+          "texto": "Implantação do modelo cívico-militar nos colégios Leonel Franca, Flauzina Dias Viegas e Silvio Vidal."
+        },
+        {
+          "ano": "2021",
+          "texto": "R$ 2,5 milhões para a maior reforma da história do Colégio Estadual de Paranavaí."
+        },
+        {
+          "ano": "2021–2024",
+          "texto": "Mais de R$ 6 milhões em reformas e melhorias em diversas unidades da rede estadual."
+        },
+        {
+          "ano": "2024",
+          "texto": "O curso de Direito da Unespar vira realidade em Paranavaí."
+        }
+      ],
+      "highlight": "R$ 9,5 milhões",
+      "highlight_label": "em reformas, tecnologia e o laboratório do IFPR"
+    },
+    {
+      "id": "meio-ambiente",
+      "tag": "Meio ambiente",
+      "title": "Meio ambiente: preparando Paranavaí para o futuro",
+      "resumo": "R$ 27,5 milhões para água, resíduos e a nova usina de tratamento da cidade.",
+      "photo": "",
+      "texto_completo": [
+        "Pensar o meio ambiente é planejar o futuro. Entre as conquistas estão R$ 6 milhões para ampliar o sistema de abastecimento de água, acompanhando o crescimento da cidade.",
+        "Também houve apoio à Coopervaí, fortalecendo o trabalho dos catadores de recicláveis, gerando renda e promovendo inclusão social.",
+        "Foram viabilizados R$ 1,5 milhão para a construção de duas novas células no aterro sanitário, e mais de R$ 20 milhões para a nova usina de tratamento de resíduos de Paranavaí.",
+        "Hoje cerca de 96% do lixo coletado vai para o aterro sanitário. Com o novo investimento, a meta é que 60% dos resíduos recebam uma nova destinação por reciclagem e compostagem — menos lixo enterrado e mais vida útil para o aterro."
+      ],
+      "timeline": [],
+      "highlight": "R$ 27,5 milhões",
+      "highlight_label": "em água, resíduos e a nova usina de tratamento"
+    },
+    {
+      "id": "infra-agro",
+      "tag": "Infraestrutura e agricultura",
+      "title": "Da porteira à cidade: infraestrutura para todos",
+      "resumo": "R$ 55 milhões em avenidas e bairros, mais R$ 11,2 milhões para máquinas e estradas rurais.",
+      "photo": "",
+      "texto_completo": [
+        "As articulações garantiram R$ 11,22 milhões em investimentos para fortalecer a infraestrutura rural de Paranavaí, incluindo a renovação da frota de máquinas do município — escavadeiras, retroescavadeiras, motoniveladora, pá carregadeira e outros equipamentos.",
+        "Esses investimentos viabilizaram o maior programa de recuperação de estradas rurais da história de Paranavaí, incluindo a Estrada do Campo, a Estrada do Caiuá e a pavimentação da Estrada Cristo Rei, com mais de R$ 7,2 milhões investidos.",
+        "Na cidade, Paranavaí avançou com mais de R$ 55 milhões em infraestrutura: as avenidas Heitor de Alencar Furtado, Euclides da Cunha, Rio Grande do Sul, Guaporé, Gabriel Esperidião e Militão Rodrigues de Carvalho, além de obras de pavimentação e recape nos distritos de Mandiocaba, Piracema e Graciosa.",
+        "A drenagem da Rua Bahia solucionou um problema histórico, e a ampliação da iluminação em LED levou mais segurança e qualidade de vida para a população."
+      ],
+      "timeline": [],
+      "highlight": "R$ 66 milhões+",
+      "highlight_label": "em vias urbanas e infraestrutura rural"
+    },
+    {
+      "id": "seguranca",
+      "tag": "Segurança pública",
+      "title": "Mais estrutura para proteger quem vive aqui",
+      "resumo": "Novo Fórum, Delegacia e a chegada da Polícia Científica a Paranavaí.",
+      "photo": "",
+      "texto_completo": [
+        "Entre os avanços estão as tratativas para a construção de um novo Fórum, uma nova Delegacia e uma nova sede do Ministério Público, fortalecendo o sistema de justiça na região.",
+        "A Guarda Municipal recebeu armamentos, novas viaturas e um módulo móvel, enquanto o 8º Batalhão da Polícia Militar passou por reformas e ganhou novos veículos para o trabalho ostensivo.",
+        "Uma das conquistas mais importantes foi a implantação da unidade da Polícia Científica em Paranavaí, com o Instituto de Criminalística somando-se ao Instituto Médico Legal — concentrando serviços de perícia e investigação para todos os municípios da Amunpar."
+      ],
+      "timeline": [],
+      "highlight": "Polícia Científica",
+      "highlight_label": "implantada em Paranavaí, atendendo toda a Amunpar"
+    },
+    {
+      "id": "esporte-social",
+      "tag": "Esporte e assistência social",
+      "title": "Investindo em sonhos e no cuidado com as pessoas",
+      "resumo": "R$ 5 milhões em arenas esportivas e na reforma do Estádio Municipal, além de apoio a 8 entidades sociais.",
+      "photo": "",
+      "texto_completo": [
+        "Foram garantidos R$ 1,5 milhão para a implantação de arenas esportivas na Vila Operária, Jardim São Jorge e distrito do Sumaré, além de R$ 3,5 milhões para a reforma do gramado do Estádio Municipal Doutor Waldemiro Wagner, palco da história do Atlético Clube Paranavaí.",
+        "No cuidado com a população mais vulnerável, entidades como APAE, Lar Vicentino, Casa da Criança, Agepaz, CECAP e Asilo Lins de Vasconcelos receberam recursos para melhorias na estrutura e ampliação dos serviços.",
+        "O apoio também chegou a entidades religiosas com papel social importante, como o Mosteiro Mater Carmeli e a Comunidade Católica Emanuel, fundada em 2005 pelo Padre Adão Dias Martins."
+      ],
+      "timeline": [],
+      "highlight": "R$ 5 milhões",
+      "highlight_label": "em arenas esportivas e no Estádio Municipal"
+    },
+    {
+      "id": "moradia",
+      "tag": "Moradia digna",
+      "title": "844 famílias com um lar para chamar de seu",
+      "resumo": "Cinco conjuntos e residenciais habitacionais entregues, mudando a vida de centenas de famílias.",
+      "photo": "",
+      "texto_completo": [
+        "A conquista da casa própria mudou a vida de milhares de famílias de Paranavaí. Com articulação e trabalho, foram viabilizados os conjuntos habitacionais Francisco Luiz de Assis, Geraldo Filipe e Luís Lorenzetti, além dos residenciais Santa Maria e Terra de Santa Cruz.",
+        "Ao todo, 844 moradias foram entregues, garantindo mais dignidade, segurança e qualidade de vida para quem sonhava em ter um lar para chamar de seu. Cada residência representa uma família com mais estabilidade, oportunidades e esperança no futuro."
+      ],
+      "timeline": [],
+      "highlight": "844 moradias",
+      "highlight_label": "entregues em 5 conjuntos e residenciais"
+    }
+  ]
+}
