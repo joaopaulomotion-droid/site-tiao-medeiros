@@ -78,6 +78,49 @@ collections:
               - { label: "Link da materia/pagina que explica o projeto", name: "link", widget: "string", hint: "Cole aqui o link de uma noticia, materia ou pagina que fala sobre este projeto" }
               - { label: "Card largo (ocupa a linha toda)", name: "wide", widget: "boolean", default: false }
 
+  - name: "obras"
+    label: "🟨 Grandes Obras e Entregas"
+    description: "Os numeros gerais, os cards de categoria e as linhas do tempo da secao 'Grandes obras e entregas'."
+    files:
+      - name: "obras"
+        label: "Obras e Entregas"
+        file: "_data/obras.json"
+        fields:
+          - { label: "Titulo grande da secao", name: "headline", widget: "string" }
+          - { label: "Texto abaixo do titulo", name: "subhead", widget: "text" }
+          - label: "Numeros gerais (aparecem em destaque no topo)"
+            name: "stats"
+            widget: "list"
+            summary: "{{num}} - {{label}}"
+            fields:
+              - { label: "Numero (ex: R$ 700 mi+)", name: "num", widget: "string" }
+              - { label: "Legenda do numero", name: "label", widget: "string" }
+          - label: "Categorias (os cards clicaveis)"
+            name: "categorias"
+            widget: "list"
+            minimize: false
+            summary: "{{title}}"
+            fields:
+              - { label: "Identificador (nao alterar)", name: "id", widget: "string" }
+              - { label: "Etiqueta/area (ex: Saude, Educacao)", name: "tag", widget: "string" }
+              - { label: "Titulo do card", name: "title", widget: "string" }
+              - { label: "Resumo curto (aparece no card)", name: "resumo", widget: "text" }
+              - { label: "Numero em destaque (ex: R$ 65 milhoes+)", name: "highlight", widget: "string" }
+              - { label: "Legenda do numero em destaque", name: "highlight_label", widget: "string" }
+              - { label: "Foto (opcional, aparece ao clicar em Saiba mais)", name: "photo", widget: "image", required: false }
+              - label: "Texto completo (aparece ao clicar em Saiba mais)"
+                name: "texto_completo"
+                widget: "list"
+                field: { label: "Paragrafo", name: "paragraph", widget: "text" }
+              - label: "Linha do tempo (opcional, deixe vazio se nao tiver)"
+                name: "timeline"
+                widget: "list"
+                required: false
+                summary: "{{ano}}"
+                fields:
+                  - { label: "Ano (ex: 2019 ou 2022-2024)", name: "ano", widget: "string" }
+                  - { label: "O que aconteceu", name: "texto", widget: "text" }
+
   - name: "hero"
     label: "⬜ Inicio - Topo do site"
     description: "O primeiro bloco que a pessoa ve ao abrir o site: titulo, texto, botoes e foto principal."
