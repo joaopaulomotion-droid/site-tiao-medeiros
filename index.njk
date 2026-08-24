@@ -310,8 +310,8 @@ body.edit-mode .slot-edit-btn{display:inline-flex;}
 @keyframes spin{to{transform:rotate(360deg);}}
 
 .scroll-cue{
-  position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
   display:flex;flex-direction:column;align-items:center;gap:8px;
+  width:fit-content;margin:34px auto 0;position:relative;
   color:rgba(255,255,255,.6);font-family:var(--label);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
   z-index:2;
 }
@@ -815,8 +815,8 @@ if (location.hash && /confirmation_token|invite_token|recovery_token|email_chang
       <div class="trust-divider"></div>
       <div class="legisla-chip"><span class="dot"></span> {{ site.hero.legisla_chip }}</div>
     </div>
+    <div class="scroll-cue" aria-hidden="true"><span>Role</span><div class="line"></div></div>
   </div>
-  <div class="scroll-cue" aria-hidden="true"><span>Role</span><div class="line"></div></div>
 </section>
 
 <!-- ============ SOBRE ============ -->
