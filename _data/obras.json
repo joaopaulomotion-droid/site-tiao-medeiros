@@ -3,16 +3,16 @@
   "subhead": "Saúde, educação, infraestrutura, meio ambiente e moradia: um compilado das principais entregas e articulações do mandato.",
   "stats": [
     {
+      "num": "134 municípios atendidos",
+      "label": "um Paraná inteiro representado"
+    },
+    {
       "num": "+ de R$ 944 milhões ",
-      "label": "viabilizados para os municípios"
+      "label": "entregues em investimentos"
     },
     {
       "num": "R$ 164 milhões",
       "label": "garantidos para a saúde"
-    },
-    {
-      "num": "134 municípios atendidos",
-      "label": "um Paraná inteiro representado"
     }
   ],
   "categorias": [
