@@ -478,17 +478,21 @@ body.edit-mode .tl-media .slot-edit-btn{display:inline-flex;}
 .obra-modal-photo .slot-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;}
 .obra-modal-highlight{font-size:clamp(30px,4vw,44px);font-weight:800;color:var(--yellow);font-family:var(--label);line-height:1.05;}
 .obra-modal-highlight-label{font-size:14px;color:rgba(255,255,255,.85);margin-top:10px;max-width:220px;}
-.obra-photo-blur{
-  position:absolute;inset:-14px;z-index:0;
-  background-size:cover;background-position:center;
-  filter:blur(26px) brightness(.5) saturate(1.1);
-  transform:scale(1.12);
-}
+.obra-photo-blur{display:none;}
 .obra-photo-main{
-  position:relative;z-index:1;
-  max-width:88%;max-height:88%;width:auto;height:auto;
-  object-fit:contain;border-radius:14px;
-  box-shadow:0 24px 48px rgba(0,0,0,.4);
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+}
+/* Foto horizontal: vira tarja no topo, texto embaixo em largura total */
+.obra-modal-panel.obra-landscape{grid-template-columns:1fr;}
+.obra-modal-panel.obra-landscape .pauta-modal-photo{
+  min-height:0;height:280px;border-radius:26px 26px 0 0;
+}
+/* Foto vertical: fica ao lado, texto ao lado dela */
+.obra-modal-panel.obra-portrait{grid-template-columns:.78fr 1.22fr;}
+.obra-modal-panel.obra-portrait .pauta-modal-photo{border-radius:26px 0 0 26px;}
+@media (max-width:640px){
+  .obra-modal-panel.obra-portrait{grid-template-columns:1fr;}
+  .obra-modal-panel.obra-portrait .pauta-modal-photo{height:320px;border-radius:26px 26px 0 0;}
 }
 .obra-timeline{margin-top:28px;padding-top:24px;border-top:1px solid var(--line);}
 .obra-timeline-item{display:flex;gap:16px;position:relative;padding-bottom:22px;}
@@ -958,8 +962,8 @@ if (location.hash && /confirmation_token|invite_token|recovery_token|email_chang
       <button class="pauta-modal-close" type="button" data-obra-modal-close aria-label="Fechar">×</button>
       <div class="pauta-modal-photo">
         {% if c.photo %}
-        <div class="obra-photo-blur" style="background-image:url('{{ c.photo }}');"></div>
-        <img src="{{ c.photo }}" alt="{{ c.title }}" class="obra-photo-main">
+        <img src="{{ c.photo }}" alt="{{ c.title }}" class="obra-photo-main"
+             onload="var p=this.closest('.obra-modal-panel'); if(this.naturalWidth>=this.naturalHeight){p.classList.add('obra-landscape');p.classList.remove('obra-portrait');}else{p.classList.add('obra-portrait');p.classList.remove('obra-landscape');}">
         {% else %}
         <div class="slot-content">
           <div class="obra-modal-highlight">{{ c.highlight }}</div>
