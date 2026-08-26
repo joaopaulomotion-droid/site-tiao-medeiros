@@ -38,32 +38,7 @@
         "Foram anos de reuniões, apresentações de projetos e diálogo permanente com a Infraero e o Governo Federal, defendendo que investir no aeroporto era investir no desenvolvimento de toda a região.",
         "Em 2026, a inauguração do novo terminal de passageiros marcou a concretização dessa luta: aproximadamente R$ 30 milhões em investimentos, incluindo balizamento noturno, nova sinalização de pista, farol de aeródromo, biruta iluminada, estação meteorológica e reforço das áreas de segurança."
       ],
-      "timeline": [
-        {
-          "ano": "2015",
-          "texto": "Defesa do potencial do aeroporto e da necessidade de investimentos para acompanhar o crescimento da cidade."
-        },
-        {
-          "ano": "2019",
-          "texto": "Retorno dos voos regulares, comprovando a demanda e o potencial de Paranavaí na aviação regional."
-        },
-        {
-          "ano": "2021",
-          "texto": "Início de uma nova etapa: primeiros projetos de melhoria e intensificação das articulações federais."
-        },
-        {
-          "ano": "2022–2024",
-          "texto": "Anos de reuniões, projetos e diálogo permanente com a Infraero e o Governo Federal."
-        },
-        {
-          "ano": "2025",
-          "texto": "A Infraero confirma os investimentos para a modernização do aeroporto."
-        },
-        {
-          "ano": "2026",
-          "texto": "Inauguração do novo terminal de passageiros: um novo tempo para Paranavaí."
-        }
-      ],
+      "timeline": [],
       "highlight_label": "na modernização do terminal e da pista",
       "photo": "/img/uploads/4-aeroporto.jpeg",
       "highlight": "R$ 30 milhões",
